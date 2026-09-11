@@ -15,10 +15,7 @@ public class StudentService {
     }
 
     public Student createStudent(Student studentReq){
-        // bassic
-        System.out.println("inside service");
-        Student studentResp = studentRepository.saveStudent(studentReq);
-        System.out.println("exiting service");
+        Student studentResp = studentRepository.save(studentReq);
         return studentResp;
     }
 
